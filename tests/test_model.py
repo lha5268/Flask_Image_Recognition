@@ -19,7 +19,7 @@ def model():
 
 def test_preprocess_img():
     """Test the preprocess_img function."""
-    img_path = "test_images/2/Sign 2 (97).jpeg"
+    img_path = "tests/test_images/2/Sign 2 (97).jpeg"
     processed_img = preprocess_img(img_path)
 
     # Check that the output shape is as expected
@@ -31,7 +31,7 @@ def test_preprocess_img():
 
 def test_predict_result(model):
     """Test the predict_result function."""
-    img_path = "test_images/4/Sign 4 (92).jpeg"  # Ensure the path is correct
+    img_path = "tests/test_images/4/Sign 4 (92).jpeg"  # Ensure the path is correct
     processed_img = preprocess_img(img_path)
 
     # Make a prediction
@@ -53,7 +53,7 @@ def test_invalid_image_path():
 
 def test_image_shape_on_prediction(model):
     """Test the prediction output shape."""
-    img_path = "test_images/5/Sign 5 (86).jpeg"  # Ensure the path is correct
+    img_path = "tests/test_images/5/Sign 5 (86).jpeg"  # Ensure the path is correct
     processed_img = preprocess_img(img_path)
 
     # Ensure that the prediction output is an integer
@@ -62,7 +62,7 @@ def test_image_shape_on_prediction(model):
 
 def test_model_predictions_consistency(model):
     """Test that predictions for the same input are consistent."""
-    img_path = "test_images/7/Sign 7 (54).jpeg"
+    img_path = "tests/test_images/7/Sign 7 (54).jpeg"
     processed_img = preprocess_img(img_path)
 
     # Make multiple predictions
