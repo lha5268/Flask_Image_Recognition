@@ -6,7 +6,7 @@ Tests basic functions of the application.
 import pytest
 import numpy as np
 from keras.models import load_model
-from model import preprocess_img, predict_result  # Adjust based on your structure
+from ..model import preprocess_img, predict_result  # Adjust based on your structure
 
 # Load the model before tests run
 @pytest.fixture(scope="module")
