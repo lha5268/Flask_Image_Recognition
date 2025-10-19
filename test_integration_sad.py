@@ -1,4 +1,7 @@
 # test_integration_sad.py
+"""
+Tests the function of the application with bad input.
+"""
 
 from io import BytesIO
 from app import app

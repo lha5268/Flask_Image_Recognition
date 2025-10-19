@@ -1,4 +1,7 @@
 # test_integration_happy.py
+"""
+Tests the functions of the application.
+"""
 
 from io import BytesIO
 # import pytest

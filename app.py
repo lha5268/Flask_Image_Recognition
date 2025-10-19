@@ -1,3 +1,7 @@
+"""
+Creates the routes for the web application and their functions.
+"""
+
 # Importing required libs
 from flask import Flask, render_template, request
 from model import preprocess_img, predict_result
@@ -9,12 +13,18 @@ app = Flask(__name__)
 # Home route
 @app.route("/")
 def main():
+    """
+    Main method for the default route.
+    """
     return render_template("index.html")
 
 
 # Prediction route
 @app.route('/prediction', methods=['POST'])
 def predict_image_file():
+    """
+    Using RESTful interface send the image file to be processed for prediction.
+    """
     try:
         if request.method == 'POST':
             img = preprocess_img(request.files['file'].stream)

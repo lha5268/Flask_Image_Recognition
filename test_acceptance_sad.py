@@ -1,4 +1,7 @@
 # test_acceptance_sad.py
+"""
+Test the error path of the application.
+"""
 
 import pytest
 from app import app

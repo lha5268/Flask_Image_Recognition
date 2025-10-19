@@ -1,4 +1,8 @@
 # import os
+"""
+Tests basic functions of the application.
+"""
+
 import pytest
 import numpy as np
 from keras.models import load_model

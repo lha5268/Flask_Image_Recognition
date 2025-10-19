@@ -1,4 +1,7 @@
 # test_acceptance_happy.py
+"""
+Acceptance testing for the expected use of the application.
+"""
 
 from io import BytesIO
 # import pytest
