@@ -1,8 +1,8 @@
 # test_integration_sad.py
 
-import pytest
-from app import app
 from io import BytesIO
+from app import app
+# import pytest
 
 @pytest.fixture
 def client():
