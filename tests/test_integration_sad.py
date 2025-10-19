@@ -4,7 +4,7 @@ Tests the function of the application with bad input.
 """
 
 from io import BytesIO
-from app import app
+from ..app import app
 # import pytest
 
 @pytest.fixture

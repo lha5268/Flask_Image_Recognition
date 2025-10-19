@@ -4,7 +4,7 @@ Test the error path of the application.
 """
 
 import pytest
-from app import app
+from ..app import app
 
 @pytest.fixture
 def client():
